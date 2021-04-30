@@ -16,4 +16,6 @@ To upload the image to gcr:
 
 Then deploy on Cloud Run (fully managed) with 'Allow unauthenticated invocations' ticked (Step 3 in the Authentication section)
 
-The bug can be observed by simply entering the service's URL in a web browser. Excepted behaviour should be to have the message "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909" printed when accessing that address.
+You can download a client to test this server [here](https://github.com/Frank-Schmutz/CloudRunDotNetGRPCClient).
+
+Or you can create your own client with the [official documentation](https://go.microsoft.com/fwlink/?linkid=2086909").
