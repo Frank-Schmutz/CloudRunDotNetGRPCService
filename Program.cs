@@ -21,7 +21,8 @@ namespace CloudRunDotNetGRPCService
                 {
                     webBuilder.ConfigureKestrel(options =>
                     {
-                        int port = int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080");
+                        //int port = int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080");
+			int port = 8081;
                         options.Listen(IPAddress.Any, port, listenOptions =>
                         {
                             listenOptions.Protocols = HttpProtocols.Http2;
